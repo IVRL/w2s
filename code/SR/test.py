@@ -13,7 +13,6 @@ from model.RRDB import RRDBNet
 from model.SRFBN import SRFBN
 from model.SAN import SAN
 from model.RDN import RDN
-from model.EDSR import EDSR
 from model.RCAN import RCAN
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
@@ -77,10 +76,10 @@ def inference(model, test_path, gt_path, results_dir):
     return psnr_results, ssim_results
 
 
-
 def main():
     
     model_name = opt.net
+    model_dir = os.path.join('../../net_data/trained_srs/', opt.net)
     
     if opt.net == 'RCAN':
         net = RCAN()

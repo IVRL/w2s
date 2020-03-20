@@ -25,7 +25,6 @@ from model.GAN import Discriminator_VGG_128, GANLoss
 from model.SRFBN import SRFBN
 from model.SAN import SAN
 from model.RDN import RDN
-from model.EDSR import EDSR
 from model.RCAN import RCAN
 
 parser = argparse.ArgumentParser(description="Train")
@@ -38,7 +37,6 @@ parser.add_argument("--ngpu", type=int, default=1, help='number of GPUs')
 parser.add_argument("--batch_size", type=int, default='16', help='number of GPUs')
 parser.add_argument("--resume", type=str, default="", help='restart training checkpoint path')
 parser.add_argument('--extra_model_name', type=str, default='', help='addition name for path')
-parser.add_argument('--pretrain', type=str, default='1', help='addition name for path')
 
 
 opt = parser.parse_args()
@@ -51,15 +49,9 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 print("===> Building model")
 if (opt.net == 'ours'):
     model = RRDBNet()
-    if (opt.pretrain == '1'):
-        l1_factor = 1.0
-        mse_factor = 0
-        feature_factor = 0
-        texture_factor = 0
-    else:
-        mse_factor = 0.5
-        feature_factor = 0.5
-        texture_factor = 0.5
+    mse_factor = 0.5
+    feature_factor = 0.05
+    texture_factor = 0.05
     vgg = VGGFeatureExtractor(device=device, feature_layer=[2, 7, 16, 25, 34], use_bn=False, use_input_norm=True)
     vgg = nn.DataParallel(vgg,device_ids=range(opt.ngpu))
     vgg.to(device)
