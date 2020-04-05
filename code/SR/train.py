@@ -18,6 +18,7 @@ import torch.nn as nn
 import math
 import argparse
 
+from model.MPNCOV.MPNCOV import CovpoolLayer
 from model.common import save_checkpoint, Hdf5Dataset, adjust_learning_rate
 from model.RRDB import RRDBNet
 from model.vgg_feature_extractor import VGGFeatureExtractor
