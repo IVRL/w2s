@@ -31,9 +31,9 @@ In folder ```net_data/trained_srs/```
 In folder ```net_data/trained_srs/```
 
 ### Reproducing results
-To train the denoisers on W2S, run ```runtest.bash``` under code/denoising
+To test the denoisers on W2S, run ```runtest.bash``` under code/denoising
 
-To train the SR networks on W2S, run ```runtest.bash``` under code/SR
+To test the SR networks on W2S, run ```runtest.bash``` under code/SR
 
 ### Re-training of the networks:
 Before training the networks run ```code/generate_h5f.ipynb``` to generate h5 files for training.
