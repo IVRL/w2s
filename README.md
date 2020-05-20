@@ -8,6 +8,10 @@ To access the LR images with different noise levels of the training dataset
 
 ```cd data/train/avg{1,2,4,8,16}```
 
+To access the clean LR images of the training dataset
+
+```cd data/train/avg400```
+
 To access the HR images of the training dataset
 
 ```cd data/train/sim```
@@ -15,6 +19,10 @@ To access the HR images of the training dataset
 To access the LR images with different noise levels of the test dataset
 
 ```cd data/test/avg{1,2,4,8,16}```
+
+To access the clean LR images of the test dataset
+
+```cd data/test/avg400```
 
 To access the HR images of the test dataset
 
