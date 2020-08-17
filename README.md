@@ -5,7 +5,10 @@
 >
 > *To study JDSR on microscopy data, we propose such a novel JDSR dataset, **W**idefield**2S**IM (W2S), acquired using a conventional fluorescence widefield and SIM imaging. W2S includes 144,000 real fluorescence microscopy images, resulting in a total of 360 sets of images. A set is comprised of noisy low-resolution (LR) widefield images with different noise levels, a noise-free LR image, and a corresponding high-quality HR SIM image. W2S allows us to benchmark the combinations of 6 denoising methods and 6 SR methods. We show that state-of-the-art SR networks perform very poorly on noisy inputs. Our evaluation also reveals that applying the best denoiser in terms of reconstruction error followed by the best SR method does not necessarily yield the best final result. Both quantitative and qualitative results show that SR networks are sensitive to noise and the sequential application of denoising and SR algorithms is sub-optimal. Lastly, we demonstrate that SR networks retrained end-to-end for JDSR outperform any combination of state-of-the-art deep denoising and SR networks*
 
-## -- Raw data -- 
+## Widefield2SIM (W2S) Raw Data
+![](https://github.com/widefield2sim/w2s/blob/master/figures/dataset.png)
+We  obtain 5 types of LR images with different noise levels by taking a single raw image or averaging different numbers of raw images (of the same field of view). The more images we average (e.g., 2, 4, 8, and 16), the lower the noise level as shown in the figure. The noise-free LR images are the average of 400 raw images, and the HR images are obtained using structured-illumination microscopy (SIM). The multi-channel images are formed by mapping the three single-channel images of different wavelengths to RGB.
+
 Raw data is available at: [https://datasets.epfl.ch/w2s/W2S_raw.zip](https://datasets.epfl.ch/w2s/W2S_raw.zip). 
 
 To exactly reconstruct all averages from the raw data, we use the indices (where indices start at 0):
@@ -16,35 +19,8 @@ To exactly reconstruct all averages from the raw data, we use the indices (where
     indices {0,1,2,3,4,5,6,7}: these images are averaged to obtain "avg8"
     indices {0,1, ..., 14, 15}: these images are averaged to obtain "avg16"
 
-The z-score is computed across all 360*400 captures; avg_value = 154.535390853, std_value = 66.02846351802853.
+*The z-score is computed across all 360x400 captures; avg_value = 154.535390853, std_value = 66.02846351802853* 
 
-## Widefield2SIM (W2S) Dataset
-![](https://github.com/widefield2sim/w2s/blob/master/figures/dataset.png)
-We  obtain  5  LR  images  with different noise levels by taking a single raw image or averaging different numbers of raw  images  (of  the  same  field  of  view).  The  more  images  we  average  (e.g.,  2,  4,  8, and  16),  the  lower  the  noise  level  as  shown  in  the  figure.  The  noise-free  LR  imagesare the average of 400 raw images, and the HR images are obtained using structured-illumination microscopy (SIM). The multi-channel images are formed by mappingthe three single-channel images of different wavelengths to RGB.
-
-To access the LR images with different noise levels of the training dataset
-
-```cd data/train/avg{1,2,4,8,16}```
-
-To access the clean LR images of the training dataset
-
-```cd data/train/avg400```
-
-To access the HR images of the training dataset
-
-```cd data/train/sim```
-
-To access the LR images with different noise levels of the test dataset
-
-```cd data/test/avg{1,2,4,8,16}```
-
-To access the clean LR images of the test dataset
-
-```cd data/test/avg400```
-
-To access the HR images of the test dataset
-
-```cd data/test/sim```
 
 ## Models
 ### Pre-trained denoisers:
