@@ -1,4 +1,4 @@
-# W2S: A Joint Denoising and Super-Resolution Dataset
+# W2S: Microscopy Data with Joint Denoising and Super-Resolution for Widefield to SIM Mapping
 ### [Video](https://github.com/IVRL/w2s/blob/master/W2S.mp4)
 ### [Supplementary Material](https://github.com/IVRL/w2s/blob/master/W2S_supp.pdf)
 
@@ -7,7 +7,7 @@
 > *To study JDSR on microscopy data, we propose such a novel JDSR dataset, **W**idefield**2S**IM (W2S), acquired using a conventional fluorescence widefield and SIM imaging. W2S includes 144,000 real fluorescence microscopy images, resulting in a total of 360 sets of images. A set is comprised of noisy low-resolution (LR) widefield images with different noise levels, a noise-free LR image, and a corresponding high-quality HR SIM image. W2S allows us to benchmark the combinations of 6 denoising methods and 6 SR methods. We show that state-of-the-art SR networks perform very poorly on noisy inputs. Our evaluation also reveals that applying the best denoiser in terms of reconstruction error followed by the best SR method does not necessarily yield the best final result. Both quantitative and qualitative results show that SR networks are sensitive to noise and the sequential application of denoising and SR algorithms is sub-optimal. Lastly, we demonstrate that SR networks retrained end-to-end for JDSR outperform any combination of state-of-the-art deep denoising and SR networks*
 
 ## Widefield2SIM (W2S) Raw Data
-![](https://github.com/widefield2sim/w2s/blob/master/figures/dataset.png)
+![](https://github.com/ivrl/w2s/blob/master/figures/dataset.png)
 We  obtain 5 types of LR images with different noise levels by taking a single raw image or averaging different numbers of raw images (of the same field of view). The more images we average (e.g., 2, 4, 8, and 16), the lower the noise level as shown in the figure. The noise-free LR images are the average of 400 raw images, and the HR images are obtained using structured-illumination microscopy (SIM). The multi-channel images are formed by mapping the three single-channel images of different wavelengths to RGB.
 
 Raw data is available at: [https://datasets.epfl.ch/w2s/W2S_raw.zip](https://datasets.epfl.ch/w2s/W2S_raw.zip). 
@@ -44,3 +44,12 @@ Before training the networks run ```code/generate_h5f.ipynb``` to generate h5 fi
 To train the denoisers on W2S, run ```runtrain.bash``` under code/denoising
 
 To train the SR networks on W2S, run ```runtrain.bash``` under code/SR
+
+## Citation
+
+    @inproceedings{zhou2020w2s,
+        title={W2S: Microscopy Data with Joint Denoising and Super-Resolution for Widefield to SIM Mapping},
+        author={{Zhou, Ruofan and El Helou, Majed and Sage, Daniel and Laroche, Thierry and Seitz, Arne and S{\"u}sstrunk, Sabine},
+        booktitle={ECCVW},
+        year={2020}
+    }
