@@ -1,5 +1,6 @@
 # W2S: A Joint Denoising and Super-Resolution Dataset
-### [Supplementary Material](https://github.com/widefield2sim/w2s/blob/master/w2s_supp.pdf)
+### [Video](https://github.com/IVRL/w2s/blob/master/W2S.mp4)
+### [Supplementary Material](https://github.com/IVRL/w2s/blob/master/W2S_supp.pdf)
 
 > **Abstract:** *In fluorescence microscopy live-cell imaging, there is a critical trade-off between the signal-to-noise ratio and spatial resolution on one side, and the integrity of the biological sample on the other side. To obtain clean high-resolution (HR) images, one can either use microscopy techniques, such as structured-illumination microscopy (SIM), or apply denoising and super-resolution (SR) algorithms. However, the former option requires multiple shots that can damage the samples, and although efficient deep learning based algorithms exist for the latter option, no benchmark exists to evaluate these algorithms on the joint denoising and SR (JDSR) tasks.*
 >
