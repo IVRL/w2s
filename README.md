@@ -11,7 +11,7 @@ We  obtain 5 types of LR images with different noise levels by taking a single r
 
 Raw data is available at: [https://datasets.epfl.ch/w2s/W2S_raw.zip](https://datasets.epfl.ch/w2s/W2S_raw.zip). 
 
-To exactly reconstruct all averages from the raw data, we use the indices (where indices start at 0):
+To exactly recompute all averages for the different noise levels from the raw data, use the following indices (where indices start at 0):
 
     index 249: used for "avg1", which is a single capture noisy image
     indices {0,1}: these images are averaged to obtain "avg2"
@@ -19,7 +19,8 @@ To exactly reconstruct all averages from the raw data, we use the indices (where
     indices {0,1,2,3,4,5,6,7}: these images are averaged to obtain "avg8"
     indices {0,1, ..., 14, 15}: these images are averaged to obtain "avg16"
 
-*The z-score is computed across all 360x400 captures; avg_value = 154.535390853, std_value = 66.02846351802853* 
+The details of the Widefield and SIM normalizations we use are presented in our [Supplementary Material](https://github.com/IVRL/w2s/blob/master/W2S_supp.pdf) Section 3.
+*For reference, the z-score computed across all 360x400 Widefield yields: avg_value = 154.535390853, std_value = 66.02846351802853* 
 
 
 ## Models
