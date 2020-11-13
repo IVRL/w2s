@@ -46,10 +46,11 @@ To train the denoisers on W2S, run ```runtrain.bash``` under code/denoising
 To train the SR networks on W2S, run ```runtrain.bash``` under code/SR
 
 ## Citation
-
-    @inproceedings{zhou2020w2s,
-        title={{W2S}: Microscopy Data with Joint Denoising and Super-Resolution for Widefield to {SIM} Mapping},
-        author={Zhou, Ruofan and El Helou, Majed and Sage, Daniel and Laroche, Thierry and Seitz, Arne and S{\"u}sstrunk, Sabine},
-        booktitle={ECCVW},
-        year={2020}
-    }
+```bibtex
+@inproceedings{zhou2020w2s,
+    title     = {{W2S}: Microscopy Data with Joint Denoising and Super-Resolution for Widefield to {SIM} Mapping},
+    author    = {Zhou, Ruofan and El Helou, Majed and Sage, Daniel and Laroche, Thierry and Seitz, Arne and S{\"u}sstrunk, Sabine},
+    booktitle = {ECCVW},
+    year      = {2020}
+}
+```
