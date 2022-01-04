@@ -18,7 +18,7 @@
 ![](https://github.com/ivrl/w2s/blob/master/figures/dataset.png)
 We  obtain 5 types of LR images with different noise levels by taking a single raw image or averaging different numbers of raw images (of the same field of view). The more images we average (e.g., 2, 4, 8, and 16), the lower the noise level as shown in the figure. The noise-free LR images are the average of 400 raw images, and the HR images are obtained using structured-illumination microscopy (SIM). The multi-channel images are formed by mapping the three single-channel images of different wavelengths to RGB.
 
-Raw data is available at: [https://datasets.epfl.ch/w2s/W2S_raw.zip](https://datasets.epfl.ch/w2s/W2S_raw.zip). 
+Raw data can be downloaded from our local server: [https://datasets.epfl.ch/w2s/W2S_raw.zip](https://datasets.epfl.ch/w2s/W2S_raw.zip). 
 
 To exactly recompute all averages for the different noise levels from the raw data, use the following indices (where indices start at 0):
 
