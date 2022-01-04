@@ -6,9 +6,9 @@
 ##### The dataset was collected to build on the findings in [SFM](https://github.com/majedelhelou/SFM).
 ##### W2S is used as benchmark (2021 update) in: 
 * [Real-time Image Denoising of Mixed Poisson-Gaussian Noise in Fluorescence Microscopy Images using ImageJ](https://authors.library.caltech.edu/111887/1/2021.11.10.468102v1.full.pdf) (bioRxiv'21)
-* [Joint self-supervised blind denoising and noise estimation](https://arxiv.org/abs/2102.08023) (arXiv'21)
+* [Joint Self-supervised Blind Denoising and Noise Estimation](https://arxiv.org/abs/2102.08023) (arXiv'21)
 * [Fully Unsupervised Diversity Denoising with Convolutional Variational Autoencoders](https://arxiv.org/abs/2006.06072) (ICLR'21)
-* [Improving Blind Spot Denoisingfor Microscopy](https://arxiv.org/abs/2008.08414) (ECCV'20)
+* [Improving Blind Spot Denoising for Microscopy](https://arxiv.org/abs/2008.08414) (ECCV'20)
 
 > **Abstract:** *In fluorescence microscopy live-cell imaging, there is a critical trade-off between the signal-to-noise ratio and spatial resolution on one side, and the integrity of the biological sample on the other side. To obtain clean high-resolution (HR) images, one can either use microscopy techniques, such as structured-illumination microscopy (SIM), or apply denoising and super-resolution (SR) algorithms. However, the former option requires multiple shots that can damage the samples, and although efficient deep learning based algorithms exist for the latter option, no benchmark exists to evaluate these algorithms on the joint denoising and SR (JDSR) tasks.*
 >
