@@ -3,7 +3,7 @@
 ### [[TensorFlow Code Version](https://github.com/mchatton/w2s-tensorflow)] (credits to 'mchatton')
 
 ### Further readings: 
-##### The dataset was collected to build on the findings in [SFM](https://github.com/majedelhelou/SFM).
+##### The dataset was collected to build on the findings in [SFM](https://github.com/majedelhelou/SFM) (ECCV'20).
 ##### W2S is used as benchmark (2021 update) in: 
 * [Real-time Image Denoising of Mixed Poisson-Gaussian Noise in Fluorescence Microscopy Images using ImageJ](https://authors.library.caltech.edu/111887/1/2021.11.10.468102v1.full.pdf) (bioRxiv'21)
 * [Joint Self-supervised Blind Denoising and Noise Estimation](https://arxiv.org/abs/2102.08023) (arXiv'21)
